@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Salsa">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <p>Implement a Contact form component. Your form should have: 2 text inputs, 1 radio button, 1text area, 1 submit button and an optional image on the right, just to make the form look a little better.<br><br>
+            ● When clicking the “Submit” button, you should validate the required fields and, if validation fails, display a red border around the input.<br><br>
+            ● If user corrects the error, you should remove the red border.<br><br>
+            ● When the form is successfully submitted (no validation errors) you should display a confirmation banner (which is hidden initially) containing the user’s first name that you just collected from the input fields. Also all the info from the input fields should be printed in the console.</p><br><br>
+
+    <div class="banner" id="banner">
+        <p id="message"><span id="close">&times</span></p>
+    </div>
+        
+    <div class="contact-box">
+        <div class="contact-left">
+            <p>Please write your firstname and last name: <i>(required)</i></p><br>
+            <form id="form" class="contact-form" onsubmit="return false">
+                <input type="text" id="prenume" placeholder="First Name" size="50"><br><br>
+
+                <input type="text" id="nume" placeholder="Last Name"size="50"><br><br>
+
+                <p>Please select your gender: <i>(required)</i></p><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <label for="mesaj">Message: <i>(required)</i></label>
+                <textarea id="mesaj" rows="15"></textarea><br>
+                <input type ="submit" id ="submit"></input>
+            </form>
+        </div>
+                
+        <div class="contact-right">
+            <h2>Reach me</h2>
+            <p>profiraa@yahoo.com<br>
+            +1 234 567 890<br>
+            no 1, Some Street<br>
+            City,Country</p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="app.js"></script>
+</html>

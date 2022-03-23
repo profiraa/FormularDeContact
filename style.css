@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    background-color:white;
+    font-size:20px;
+    color:rgb(100, 91, 91);
+    font-family: Salsa;
+    margin: 50px 50px auto;
+}
+.banner{
+    color:rgb(58, 51, 51);
+    width: 1300px;
+    padding: 20px;
+    margin-left:70px;
+    display: flex;
+    justify-content: space-between;
+}
+p > span{
+    align-items: right;
+}
+#close{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contact-box{
+    grid-area:"contact-box";
+    margin: 40px;
+    background: rgb(243, 207, 207);
+    display: grid; 
+    column-count: 2;
+    grid-template-columns: 50% 47%;
+    grid-gap: 20px;
+    border-radius: 10px;
+}
+.contact-box form{
+    color:rgb(78, 73, 73);
+}
+.contact-left{
+    grid-area:"contact-left";
+    padding:40px 0px 40px 60px;
+    margin:40px;  
+    background-color: rgb(240, 142, 142);
+}
+#prenume{
+    padding: 15px;
+    background-color: white;
+}
+#nume{
+    padding:15px;
+    background-color: white;
+}
+#male{
+    margin-left:50px;
+}
+#female{
+    margin-left:50px;
+}
+textarea{
+    width: 80%;
+    border: 1px solid gray;
+    resize: none;
+    padding:15px;
+    box-sizing: border-box;
+}
+button{
+    background: rgb(92, 91, 91);
+    width:100px;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: gray;
+    margin-top: 20px;
+    padding:5px auto;
+    float:right;
+    margin-right: 115px;
+}
+form {
+    width:inherit;
+    height: 100px;
+    margin-left: 0px auto;
+    padding: 1em;
+    box-sizing: border-box; 
+}
+label{
+    color: rgb(78, 73, 73);
+}
+.contact-right{
+    grid-area:"contact-right";
+    margin:40px;
+    background-image: url(fundal.jpg);
+}
+ h2{
+    color: black;
+    margin: 270px 330px;
+}
+.contact-right p{
+    margin-left: 120px;
+    margin-bottom: 30px;
+    color: rgb(253, 253, 253);
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+/*mobile responsive
+@media (max-width:500px){
+    .container{
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "container"
+      "contact-box"
+      "contact-left"
+      "contact-right"
+    }
+  }
