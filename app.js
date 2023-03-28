@@ -155,7 +155,7 @@ function select() {
     var x = document.getElementById("prenume").value;
     document.getElementById("banner").innerHTML = x;
     if (bannerOn){
-        banner.style.background = 'rgb(131, 202, 131)';
+        banner.style.background = 'rgb(243, 207, 207)';
         banner.innerHTML = 'Thank you for contacting us, ' + x + '.'; 
     }
     else{

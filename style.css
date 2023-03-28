@@ -13,12 +13,15 @@
     color:rgb(58, 51, 51);
     width: 1300px;
     padding: 20px;
-    margin-left:70px;
+    margin:auto;
     display: flex;
     justify-content: space-between;
+    border-radius: 10px;
+    width: fit-content;
 }
-p > span{
-    align-items: right;
+.banner p > span{
+    align-items: center;
+    text-align: center;
 }
 #close{
     cursor: pointer;

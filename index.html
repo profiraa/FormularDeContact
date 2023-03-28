@@ -10,18 +10,13 @@
 </head>
 <body>
     <div class="container">
-        <p>Implement a Contact form component. Your form should have: 2 text inputs, 1 radio button, 1text area, 1 submit button and an optional image on the right, just to make the form look a little better.<br><br>
-            ● When clicking the “Submit” button, you should validate the required fields and, if validation fails, display a red border around the input.<br><br>
-            ● If user corrects the error, you should remove the red border.<br><br>
-            ● When the form is successfully submitted (no validation errors) you should display a confirmation banner (which is hidden initially) containing the user’s first name that you just collected from the input fields. Also all the info from the input fields should be printed in the console.</p><br><br>
-
     <div class="banner" id="banner">
-        <p id="message"><span id="close">&times</span></p>
+        <p id="message"><span id="close"></span></p>
     </div>
         
     <div class="contact-box">
         <div class="contact-left">
-            <p>Please write your firstname and last name: <i>(required)</i></p><br>
+            <p>Please write your first name and last name: <i>(required)</i></p><br>
             <form id="form" class="contact-form" onsubmit="return false">
                 <input type="text" id="prenume" placeholder="First Name" size="50"><br><br>
 
